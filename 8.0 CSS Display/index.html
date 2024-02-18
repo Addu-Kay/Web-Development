@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+  TODO
+1. By changing only the display property of the CSS make all 3 squares line up horizontally like in goal1 image.
+2. Change only the display property to make all 3 squares line up vertically like in goal2 image. 
+-->
+
+<head>
+  <title>CSS Display Property Example</title>
+  <style>
+    p {
+      color: white;
+    }
+
+    /* If the display of an element is set to block then the browser will not allow any other element to be in line with that element. */
+    .red {
+      display: block;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+
+    /* If the display of an element is set to inline then that element can be in line with other elements which has display inline or inline-block set  */
+    /* And element's height and width can't be changed when the display is set to inline*/
+    .green {
+      display: inline;
+      width: 200px;
+      height: 200px;
+      background-color: green;
+    }
+
+    /* If the display of an element is set to inline-block then that element will be in line with other elements which has display inline or inline-block set */
+    /* Element's height and width can be changed. */
+    /* Element will act like it's display is set to block when there is not enough space for the other elements */
+    .blue {
+      display: inline-block;
+      width: 700px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+
+<body>
+  <h1>CSS Display Property</h1>
+  <p class="red">Red Paragraph </p>
+  <p class="green">Green Paragraph</p>
+  <p class="blue">Blue Paragraph</p>
+</body>
+
+</html>
