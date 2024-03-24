@@ -7,8 +7,7 @@ for (let i = 0; i < document.querySelectorAll(".drum").length; i++) {
 }
 
 
-// Why does this work only after using the click event listener
-// document.querySelectorAll("button")[0].addEventListener("keydown", function (event) { makeSound(event.key); });
+
 
 document.addEventListener("keydown", function (event) { makeSound(event.key); animateButton(event.key); });
 
